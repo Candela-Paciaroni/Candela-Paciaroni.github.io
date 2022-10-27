@@ -5,21 +5,24 @@
   }
   body{
     font-family:"Raleway-Bold";
+    overflow-x: hidden;
+
   }
   a{
     text-decoration: none;
   }
 .sobre-mi{
-  width: 100%;
+  width: 100vw;
   display: flex;
-  z-index: -100;
+  z-index: -1000;
   height: 100vh;
   background: linear-gradient(rgba(4, 0, 25, 0.7) 0%, rgba(3, 1, 29, 0.7) 100%),
   url(recursos/puente-colgante.jpg);
   background-position: center;
   background-size: cover;
   position: absolute;
-  top: 100vh;
+  top: 97vh;
+  overflow-x: hidden;
 }
 .container-sobre-mi{
   width: 80vw;
