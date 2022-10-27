@@ -49,6 +49,16 @@ left: 1400px;
 left: 1600px;
 }
 }
+@media (min-width:2000px){
+    .menu{
+left: 1600px;
+}
+}
+@media (min-height:800px){
+    .menu{
+top: 200px;
+}
+}
 .menu li{
     left: 0px;
     position: absolute;
