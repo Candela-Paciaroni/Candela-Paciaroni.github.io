@@ -8,8 +8,8 @@
     visibility: hidden;
     pointer-events: none;
   }
-  .nombre, .sobre-mi-responsive, .yo-responsive{
-    display: none;
+  .nombre, .sobre-mi-responsive, .yo-responsive, .ingresar-responsive{
+    display: none!important;
   }
 
 
