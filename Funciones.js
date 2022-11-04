@@ -1,17 +1,23 @@
-const navMenu = document.querySelector(".nav-menu");
-const openMenuBtn = document.querySelector(".open-menu");
-const closeMenuBtn = document.querySelector(".close-menu");
-const contenedor = document.querySelector(".contenedor-responsive");
-const fondo = document.querySelector("menu-fondo");
+let openMenuBtn = document.querySelector('.menu-bar');
+let navMenu = document.querySelector('.menu-responsive');
 
+openMenuBtn.onclick= function(){
+  navMenu.classList.toggle('mostrar');
+}
+
+/*
 function toggleMenu() {
-  navMenu.classList.toggle("menu_open");
-  contenedor.classList.toggle("activado");
-  fondo.classList.toggle("activo");
+  navMenu.classList.toggle('mostrar');
 }
 
 openMenuBtn.addEventListener("click", toggleMenu);
-closeMenuBtn.addEventListener("click", toggleMenu);
+
+/*
+const subtitulo= document.querySelector(".subtitulo");
+const enlaceLogo=document.querySelector(".logo-enlace");
+
+ subtitulo.classList.toggle("desactivado");
+  enlaceLogo.classList.toggle("desactivado");
 
 
 /*const menu=document.querySelector(".nav-menu");

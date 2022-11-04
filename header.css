@@ -38,13 +38,14 @@ max-width: 1800px!important;
     z-index: 2000;
     top: -10px;
 }
+    
 ul{
     list-style: none; 
   
  }
  ul li a{
      color: #bfceeb;
-     font-size: 15px;
+     font-size: 15px!important;
      text-decoration: none;
      padding: 0 12px 0 12px!important;
      font-family:"Raleway-Bold";
@@ -90,6 +91,9 @@ ul{
 }
 .ingresar:hover a{
     color:rgb(89, 194, 255)!important;
+}
+.open-menu, .close-menu, .ingresar-responsive{
+    display: none;
 }
 
 

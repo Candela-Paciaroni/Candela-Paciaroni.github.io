@@ -59,6 +59,12 @@ left: 1600px;
 top: 200px;
 }
 }
+@media (min-height:1000px){
+    .menu{
+top: 300px;
+}
+}
+
 .menu li{
     left: 0px;
     position: absolute;
