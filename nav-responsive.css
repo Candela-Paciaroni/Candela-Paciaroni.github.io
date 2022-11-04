@@ -114,6 +114,7 @@
     display: none;
   }
   .sobre-mi-responsive{
+    width: 100vw;
  display: flex!important;
  height: 200px;
   }
@@ -130,7 +131,7 @@ width: 320px;
 height: 340px;
 }
 .descargar-cv{
-  margin: 0 55px!important;
+  margin: 0px 55px 20px 55px!important;
 }
 .cuadro-info ul li::after{
 
