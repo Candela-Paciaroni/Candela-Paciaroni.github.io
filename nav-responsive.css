@@ -55,8 +55,12 @@
  
   }
   .nombre{
+    display: flex!important;
     color: rgb(14, 164, 209);
     top:200px;
+  }
+  .ingresar-responsive{
+    display: flex!important;
   }
   .portada{
     display: block;
@@ -71,6 +75,7 @@
     background-size: cover;
 }
   .yo-responsive{
+    display: flex!important;
     width: 200px;
     height: 200px;
     top: 250px;
@@ -108,7 +113,7 @@
     display: none;
   }
   .sobre-mi-responsive{
- display: flex;
+ display: flex!important;
   }
   
   .sobre-mi-izq span{
