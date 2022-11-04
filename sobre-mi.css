@@ -11,9 +11,8 @@
   a{
     text-decoration: none;
   }
-.sobre-mi{
+.contenedor-secciones{
   width: 100vw;
-  display: flex;
   z-index: -1000;
   height: 100vh;
   background: linear-gradient(rgba(4, 0, 25, 0.7) 0%, rgba(3, 1, 29, 0.7) 100%),
@@ -21,8 +20,10 @@
   background-position: center;
   background-size: cover;
   position: absolute;
-  top: 90vh;
   overflow-x: hidden;
+}
+.sobre-mi{
+  top: 100vh;
 }
 .container-sobre-mi{
   width: 80vw;
