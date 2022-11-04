@@ -45,6 +45,7 @@
     width: 100vw!important;
     justify-content: center;
   left: 0px;
+  margin-left:40px !important;
   }
   .nombre, .yo-responsive{
     width: 100vw;
@@ -114,14 +115,25 @@
   }
   .sobre-mi-responsive{
  display: flex!important;
+ height: 200px;
   }
-  
+  .sobre-mi-der h2{
+    margin: 40px 55px!important;
+  }
   .sobre-mi-izq span{
   color:rgb(195, 225, 252);
+  margin: 0 55px!important;
 }
 .cuadro-info{
 color:rgb(195, 225, 252);
-width: 500px;
+width: 320px;
+height: 340px;
+}
+.descargar-cv{
+  margin: 0 55px!important;
+}
+.cuadro-info ul li::after{
+
 }
   @media (max-width:1200px){
 
