@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="portada-verdadera.css">
     <link rel="import" href="sobre-mi.html">
     <link rel="stylesheet" href="nav-responsive.css">
+    <link rel="stylesheet" href="experiencia.css">
     <script defer src="texto.js"></script>
     <script defer src="sobre-mi.js"></script>
     <script src="Funciones.js"></script>
@@ -26,7 +27,7 @@
 </head>
 <body>
 
-    <div class="portada">
+        <div class="portada"id="inicio">
         <canvas id="canvas1">
         </canvas>
         <div class="datos-portada d-flex justify-content-center align-items-center">
@@ -50,9 +51,11 @@
                 <li style="--i:5" class="follow-me instagram"><a href="https://www.instagram.com/cande_np/?hl=es" target="_blank" id="instagram"><i class="fa-brands fa-instagram"></i></a></li>
             
             </div>
-    </div>
+    
+        </div>
 
-    <script>
+
+         <script>
         let toggle = document.querySelector('.toggle');
         let menu = document.querySelector('.menu');
         toggle.onclick= function(){
@@ -60,7 +63,8 @@
         }
         </script>
 
-    <header id="inicio" class=" d-flex justify-content-center align-content-center w-100 pt-3">
+
+        <header  class=" d-flex justify-content-center align-content-center w-100 pt-3">
         <nav class="barra-inicio d-flex justify-content-start justify-content-lg-between align-items-center">
             <div class="izq d-flex flex-column align-items-md-center">
                 <!--desactivado--><a href="#" class="logo-enlace"><img class="logo" src="recursos/logo-argentina-programa-sin-fondo.png" alt="logo Argentina Programa"></a>
@@ -72,11 +76,11 @@
                       <li class="w-100 d-flex justify-content-center pt-5"><button type="button " class="w-75 btn btn-info ingresar-responsive p-3 fs-1">INGRESAR</button>
                       </li>
                         <li class="item-menu select"><a href="#inicio" class="">INICIO</a></li>
-                        <li class="item-menu "><a href="#experiencia.html">EXPERIENCIA</a></li>
+                        <li class="item-menu "><a href="#experiencia">EXPERIENCIA</a></li>
                         <li class="item-menu "><a href="#educacion">EDUCACIÓN</a></li>
-                        <li class="item-menu "> <a href="proyectos">PROYECTOS</a></li>
+                        <li class="item-menu "> <a href="#proyectos">PROYECTOS</a></li>
                         <li class="item-menu "><a href="#skills">SKILLS</a></li>
-                        <li class="item-menu "><a href="#proyectos">INTERESES</a></li>
+                        <li class="item-menu "><a href="#intereses">INTERESES</a></li>
                     </ul>
             </div>
             <div class="der d-flex justify-content-end">
@@ -87,9 +91,56 @@
              </nav>
             </header>
             
-           
 
-    <section class="sobre-mi d-flex justify-content-center align-items-center">
+        <div class="w-100 d-flex justify-content-center nav-responsive pb-3">
+                <nav class="navbar navbar-expand-lg navbar-dark  w-75">
+                    <div class="container-fluid">
+                        <div class="d-flex flex-column align-items-center">
+                            <a class="navbar-brand" href="#">
+                                <img src="./recursos/logo-argentina-programa-sin-fondo.png" class="logo-responsive" alt="">
+                            </a>
+                            <span class="subtitulo fs-5">#YoProgramo</span>
+                        </div>
+                    
+                      <button class="navbar-toggler botton-menu-responsive" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <div class="menu-bar">
+                            <div class="uno"></div>
+                            <div class="dos"></div>
+                            <div class="tres"></div>
+                          </div>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav  navbar-responsive d-flex justify-content-center align-items-center">
+                          <li class="nav-item">
+                            <a class="nav-link active pt-5" aria-current="page" href="#">INICIO</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">EXPERIENCIA</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">EDUCACIÓN</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">PROYECTOS</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">SKILLS</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">INTERESES</a>
+                          </li>
+                
+                          <button class="btn btn-outline-info w-75 fs-3 ingresar-responsive justify-content-center" type="submit">INGRESAR</button>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+    
+            </div>
+            
+            
+            <section class="sobre-mi contenedor-secciones d-flex justify-content-center align-items-center">
+
                 <div class="container-sobre-mi d-flex justify-content-center">
                     <div class="sobre-mi-der d-flex flex-column align-content-between justify-content-between me-5"> 
                         <h2 class="d-flex mb-2 titulo-sobre-mi">SOBRE MI </h2>
@@ -153,52 +204,158 @@
 
              </div>
             </section>
-            
-            <div class="w-100 d-flex justify-content-center nav-responsive pb-3">
-                <nav class="navbar navbar-expand-lg navbar-dark  w-75">
-                    <div class="container-fluid">
-                        <div class="d-flex flex-column align-items-center">
-                            <a class="navbar-brand" href="#">
-                                <img src="./recursos/logo-argentina-programa-sin-fondo.png" class="logo-responsive" alt="">
-                            </a>
-                            <span class="subtitulo fs-5">#YoProgramo</span>
-                        </div>
-                    
-                      <button class="navbar-toggler botton-menu-responsive" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <div class="menu-bar">
-                            <div class="uno"></div>
-                            <div class="dos"></div>
-                            <div class="tres"></div>
+
+            <section class="contenedor-secciones experiencias d-flex flex-column align-items-center" id="experiencia">
+                <h2 class="titulo-sobre-mi mt-5 pt-5">EXPERIENCIA</h2>
+                <div class="row d-flex w-75 justify-content-between mt-5">
+                    <div class="col col-sm-1 col-md-2 col-lg-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./recursos/Logo-alas.png" class="card-img-top p-5" alt="...">
+                            <div class="card-body p-2 mt-3 mb-2">
+                              <h5 class="card-title">Coordinadora de TICs</h5>
+                              <p class="card-text">Alas Empresa Jr.</p>
+                            </div>
+                            <ul class="list-group list-group-flush p-2">
+                              <li class="list-group-item">Desarrollo y mantenimiento en
+                                (WordPress).
+                            </li>
+                              <li class="list-group-item">Correos corporativos.</li>
+                              <li class="list-group-item">Relevar requerimientos</li>
+                            </ul>
+                            <div class="card-body p-2">
+                              <a href="#" class="card-link">https://www.alasempresajunior.com.ar/</a>
+                            </div>
                           </div>
-                      </button>
-                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav  navbar-responsive d-flex justify-content-center align-items-center">
-                          <li class="nav-item">
-                            <a class="nav-link active pt-5" aria-current="page" href="#">INICIO</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">EXPERIENCIA</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">EDUCACIÓN</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">PROYECTOS</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">SKILLS</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">INTERESES</a>
-                          </li>
+                    </div>
+                    <div class="col col-sm-1 col-md-2 col-lg-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./recursos/Logo.png" class="card-img-top " alt="...">
+                            <div class="card-body p-2">
+                              <h5 class="card-title">DESARROLLADORA WEB</h5>
+                              <p class="card-text">MisterioZ</p></div>
+                            <ul class="list-group list-group-flush p-2">
+                              <li class="list-group-item">Diseñar página en Adobe XD</li>
+                              <li class="list-group-item">Desarrollarla con CSS y HTML</li>
+                              <li class="list-group-item">Responsive design.</li>
+                            </ul>
+                            <div class="card-body p-2">
+                              <a href="#" class="card-link">https://misterioz.com/</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col col-sm-1 col-md-2 col-lg-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./recursos/Adobe_XD_CC_icon.svg.png" class="card-img-top p-5" alt="...">
+                            <div class="card-body p-2">
+                              <h5 class="card-title">DISEÑADORA</h5>
+                              <p class="card-text">Freelancer</p>
+                            </div>
+                            <ul class="list-group list-group-flush p-2">
+                              <li class="list-group-item">Tratar con el cliente</li>
+                              <li class="list-group-item">Realizar el diseño con sus revisiones en Adobe XD e ilustrator</li>
+                            </ul>
+                            <div class="card-body">
+                            </div>
+                          </div>
+                    </div>
+                </div>
                 
-                          <button class="btn btn-outline-info w-75 fs-3 ingresar-responsive justify-content-center" type="submit">INGRESAR</button>
-                        </ul>
+               
+              
+            </section>
+
+            <section class="contenedor-secciones educacion d-flex flex-column align-items-center" id="educacion">
+                <h2 class="titulo-sobre-mi mt-5 pt-5">EDUCACIÓN</h2>
+                <div class="row d-flex w-75 justify-content-between mt-5">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              Accordion Item #1
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              Accordion Item #2
+                            </button>
+                          </h2>
+                          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              Accordion Item #3
+                            </button>
+                          </h2>
+                          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+
+            </section>
+
+            <section class="contenedor-secciones proyectos d-flex flex-column align-items-center" id="proyectos">
+                <h2 class="titulo-sobre-mi mt-5 pt-5">PROYECTOS</h2>
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="./recursos/diseño-app.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>First slide label</h5>
+                          <p>Some representative placeholder content for the first slide.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./recursos/diseño-pag.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Second slide label</h5>
+                          <p>Some representative placeholder content for the second slide.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./recursos/mobile-7.jpeg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Third slide label</h5>
+                          <p>Some representative placeholder content for the third slide.</p>
+                        </div>
                       </div>
                     </div>
-                  </nav>
-    
-            </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+
+            </section>
+           
+            <section class="contenedor-secciones skills d-flex flex-column align-items-center" id="skills">
+                <h2 class="titulo-sobre-mi mt-5 pt-5">SKILLS</h2>
+               
+            </section>
 
            
       
