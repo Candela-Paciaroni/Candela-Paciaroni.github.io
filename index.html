@@ -18,19 +18,25 @@
     <link rel="stylesheet" href="sobre-mi.css">
     <link rel="stylesheet" href="portada-verdadera.css">
     <link rel="import" href="sobre-mi.html">
+    <link rel="stylesheet" href="nav-responsive.css">
     <script defer src="texto.js"></script>
     <script defer src="sobre-mi.js"></script>
+    <script src="Funciones.js"></script>
 
 </head>
 <body>
 
     <div class="portada">
         <canvas id="canvas1">
-            
         </canvas>
-        <div class="titulo-portada d-flex justify-content-xl-start justify-content-xxl-center w-75">
-            <h2 class="d-flex flex-column">DESARROLLADORA WEB FULL STACK JR.</h2>
+        <div class="datos-portada d-flex justify-content-center align-items-center">
+            <h1 class="nombre">CANDELA PACIARONI</h1>
+         <img src="./recursos/yo.jpeg" class="yo-responsive"alt="">
+            <div class="titulo-portada d-flex justify-content-xl-start justify-content-xxl-around w-75">
+                <h2 class="d-flex flex-column">DESARROLLADORA WEB FULL STACK JR.</h2>
+            </div>
         </div>
+     
         <input type="text" id="text" placeholder="CANDELA PACIARONI">
         
         <div class="menu">
@@ -57,11 +63,14 @@
     <header id="inicio" class=" d-flex justify-content-center align-content-center w-100 pt-3">
         <nav class="barra-inicio d-flex justify-content-start justify-content-lg-between align-items-center">
             <div class="izq d-flex flex-column align-items-md-center">
-                <a href="#"><img class="logo" src="recursos/logo-argentina-programa-sin-fondo.png" alt="logo Argentina Programa"></a>
-                <span>#YoProgramo</span>
+                <!--desactivado--><a href="#" class="logo-enlace"><img class="logo" src="recursos/logo-argentina-programa-sin-fondo.png" alt="logo Argentina Programa"></a>
+                <span class="subtitulo">#YoProgramo </span><!--desactivado-->
             </div>
-            <div class="centro ms-4 pb-3">
-                    <ul class="d-flex align-items-center">
+
+            <div class="centro ms-4 pb-3" id="centro">
+                    <ul class="d-flex align-items-center pt-4 menu-responsive">
+                      <li class="w-100 d-flex justify-content-center pt-5"><button type="button " class="w-75 btn btn-info ingresar-responsive p-3 fs-1">INGRESAR</button>
+                      </li>
                         <li class="item-menu select"><a href="#inicio" class="">INICIO</a></li>
                         <li class="item-menu "><a href="#experiencia.html">EXPERIENCIA</a></li>
                         <li class="item-menu "><a href="#educacion">EDUCACIÓN</a></li>
@@ -69,12 +78,16 @@
                         <li class="item-menu "><a href="#skills">SKILLS</a></li>
                         <li class="item-menu "><a href="#proyectos">INTERESES</a></li>
                     </ul>
-                </div>
+            </div>
             <div class="der d-flex justify-content-end">
                     <button type="button" class="btn btn-secondary ingresar"><a href="#salir">INGRESAR</a> </button>
                 </div>
+
+            </div>
              </nav>
             </header>
+            
+           
 
     <section class="sobre-mi d-flex justify-content-center align-items-center">
                 <div class="container-sobre-mi d-flex justify-content-center">
@@ -101,19 +114,93 @@
                             <ul class="pt-2 pb-2">
                                 <li>Presencial o remoto</li>
                                 <li>Disponibilidad Full time
-                                </li>Proactiva
-                                <li>I
+                                <li>Inglés básico
                                 </li>
                             </ul>
                     </div>
               
                     </div>
                 </div>
-             
+             <div class="sobre-mi-responsive d flex-column justify-content-center">
+                <div class="sobre-mi-der d-flex flex-column  justify-content-between"> 
+                    <h2 class="d-flex mb-2 titulo-sobre-mi mb-5 ">SOBRE MI </h2>
+                </div>
+                <div class="sobre-mi-izq mb-5">
+                    <span class="d-flex justify-content-center">
+                        ¡HOLA!<br>
+                        SOY DEVELOPER WEB FULL STACK JR. <br>
+                        MI OBJETIVO ES OBTENER EXPERIENCIA,<BR>
+                         APLICANDO Y EXPANDIENDO MIS CONOCIMIENTOS <BR>
+                        EN PROYECTOS Y NUEVOS DESAFÍOS.<BR>
+                        SOY RESPONSABLE, AUTODIDACTA Y AUTOGESTIONO MI TIEMPO.<BR>
+                        AMO TRABAJAR EN EQUIPO Y CULTIVAR MI CREATIVIDAD.
+                    </span>
+                    <div class=" mt-5 d-flex cuadro-info justify-content-around align-items-center">
+                        <ul class="ps-4">
+                            <li>Santa Fe, Argentina</li>
+                            <li>15/07/1997 (25 años)</li>
+                            <li>1 año de experiencia</li>
+                        </ul>
+                        <ul class="pt-2 pb-2">
+                            <li>Presencial o remoto</li>
+                            <li>Disponibilidad Full time
+                            <li>Inglés básico
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <h2><a href="#" target="_blank" rel="noopener noreferrer" class="descargar-cv pt-5">DESCARGAR CV</a></h2>
+
+             </div>
             </section>
+            
+            <div class="w-100 d-flex justify-content-center nav-responsive pb-3">
+                <nav class="navbar navbar-expand-lg navbar-dark  w-75">
+                    <div class="container-fluid">
+                        <div class="d-flex flex-column align-items-center">
+                            <a class="navbar-brand" href="#">
+                                <img src="./recursos/logo-argentina-programa-sin-fondo.png" class="logo-responsive" alt="">
+                            </a>
+                            <span class="subtitulo fs-5">#YoProgramo</span>
+                        </div>
+                    
+                      <button class="navbar-toggler botton-menu-responsive" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <div class="menu-bar">
+                            <div class="uno"></div>
+                            <div class="dos"></div>
+                            <div class="tres"></div>
+                          </div>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav  navbar-responsive d-flex justify-content-center align-items-center">
+                          <li class="nav-item">
+                            <a class="nav-link active pt-5" aria-current="page" href="#">INICIO</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">EXPERIENCIA</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">EDUCACIÓN</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">PROYECTOS</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">SKILLS</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">INTERESES</a>
+                          </li>
+                
+                          <button class="btn btn-outline-info w-75 fs-3" type="submit">INGRESAR</button>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+    
+            </div>
 
-     
-
+           
       
 
 
