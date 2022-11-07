@@ -9,7 +9,7 @@
     background-color: black;
   }
   canvas {
-      display: block;
+      display: flex;
       top: 0;
       left: 0;
       position: absolute;
@@ -53,6 +53,12 @@ pointer-events: none;
     left: 0px;
   }
 }
+@media (max-width:1350px){
+  canvas,  .experiencias, .sobre-mi, .educacion, .skills, .proyectos, .portada{
+    width: 120vw;
+  }
+}
+
   @media (min-height:700px){
     .titulo-portada{
     top: 400px;
